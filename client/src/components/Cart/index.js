@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import './style.css';
@@ -13,9 +15,11 @@ const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
-  const [state, dispatch] = useStoreContext();
+  const dispatch = useDispatch();
+  const state = useSelector(state => state);
     console.log(state);
-  useEffect(() => {
+  
+    useEffect(() => {
     async function getCart() {
       const cart = await idbPromise('cart', 'get');
       dispatch({ type: ADD_MULTIPLE_TO_CART, products: [...cart] });
