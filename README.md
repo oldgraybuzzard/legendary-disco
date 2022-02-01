@@ -22,7 +22,7 @@ NPM, React, Redux, GraphQL, Apollo Server
 * [Github Repo Link](https://github.com/oldgraybuzzard/legendary-disco.git)
 
 ## Usage 🏆
-![Screenshot of Application](readme-assets\Screenshot 2022-02-01 171620.png)
+![Screenshot of Application](https://github.com/oldgraybuzzard/legendary-disco/blob/cbee99d82238961567a4c80b24c455774460c75e/readme-assets/Screenshot 2022-02-01 171620.png)
 
 ## Contributors 😃
 [oldgraybuzzard](https://github.com/oldgraybuzzard)
